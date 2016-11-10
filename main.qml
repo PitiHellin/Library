@@ -50,7 +50,6 @@ Window {
             onClicked: {
                 peopleName=Library.getPeopleNames()
                 stackTop.push(Qt.resolvedUrl("peopleNames.qml"))
-                console.log(Library.getPeopleNames())
             }
         }
         Text {
@@ -78,7 +77,6 @@ Window {
             onClicked: {
                 age=Library.getPeopleAges()
                 stackTop.push(Qt.resolvedUrl("peopleAges.qml"))
-                console.log(Library.getPeopleAges())
             }
         }
         Text {
@@ -104,9 +102,9 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
-                people=JSON.stringify(Library.getAllPeople())
+                people= Library.getAllPeople()
+                //people=JSON.stringify(Library.getAllPeople())
                 stackTop.push(Qt.resolvedUrl("allPeople.qml"))
-                console.log(JSON.stringify(Library.getAllPeople()))
             }
         }
         Text {
@@ -130,10 +128,9 @@ Window {
         MouseArea{
             anchors.fill: parent
             onClicked: {
+                peopleOld=Library.getOldPeople()
                 stackTop.push(Qt.resolvedUrl("allPeopleOld.qml"))
-                console.log(JSON.stringify(Library.getOldPeople()))
-                peopleOld=JSON.stringify(Library.getOldPeople())
-                //console.log(peopleOld)
+                //console.log(JSON.stringify(Library.getOldPeople()))
             }
         }
 

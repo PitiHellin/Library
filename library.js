@@ -167,6 +167,8 @@ function getOldPeople()
             newArrayOld.push(people[i]);
         }
     }
+    console.log(newArrayOld)
     return newArrayOld;
+
     // It should return the same as above but only the old people
 }
