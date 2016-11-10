@@ -17,7 +17,13 @@ Rectangle {
         {
             if(people.length > position)
             {
-                return people[position].name
+                if(people[position].name){
+                    return people[position].name
+                }
+                else{
+                    return "Name not available"
+                }
+//                return people[position].name
 
             }
             else
@@ -37,7 +43,13 @@ Rectangle {
         {
             if(people.length > position)
             {
-                return people[position].age
+                if(people[position].age){
+                    return people[position].age
+                }
+                else{
+                    return "Age not available"
+                }
+//                return people[position].age
             }
             else
             {

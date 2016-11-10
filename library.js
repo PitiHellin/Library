@@ -9,14 +9,14 @@ var accessToken = '';
 
 var people=[{
               "name":"Lucia",
-              "age":24
+              "age": 26
             },
             {
-              "name":"Ricardo",
-              "age":31
+              //"name":"Ricardo",
+              //"age":31
             },
             {
-              "name":"Petro",
+              //"name":"Petro",
               "age":42
             },
             {
@@ -25,7 +25,23 @@ var people=[{
             },
             {
               "name":"Mohamed",
-              "age":45
+              //"age":45
+            },
+            {
+              "name":"Ricardo2",
+              "age":31
+            },
+            {
+              "name":"Petro2",
+              "age": 1.5
+            },
+            {
+              "name":"Claudia2",
+              "age": -1
+            },
+            {
+              "name":"Mohamed2",
+              "age": 300
             },
             {
               "name":"Romina",
@@ -167,7 +183,6 @@ function getOldPeople()
             newArrayOld.push(people[i]);
         }
     }
-    console.log(newArrayOld)
     return newArrayOld;
 
     // It should return the same as above but only the old people

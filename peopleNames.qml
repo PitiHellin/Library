@@ -19,7 +19,13 @@ Rectangle {
         {
             if(peopleName.length > position)
             {
-                return peopleName[position]
+                if(peopleName[position]){
+                    return peopleName[position]
+                }
+                else{
+                    return "Name not available"
+                }
+                //return peopleName[position]
             }
             else
             {
